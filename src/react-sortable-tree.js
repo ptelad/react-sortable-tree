@@ -435,7 +435,7 @@ class ReactSortableTree extends Component {
     // Drop was cancelled
     if (!dropResult) {
       resetTree();
-    } else if (dropResult.treeId !== this.treeId) {
+    } else if (dropResult.treeId && dropResult.treeId !== this.treeId) {
       // The node was dropped in an external drop target or tree
       const { node, path, treeIndex } = dropResult;
       let shouldCopy = this.props.shouldCopyOnOutsideDrop;
