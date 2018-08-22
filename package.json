@@ -1,6 +1,6 @@
 {
   "name": "react-sortable-tree",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Drag-and-drop sortable component for nested data and hierarchies",
   "scripts": {
     "prebuild": "npm run lint",
@@ -17,15 +17,15 @@
     "storybook": "start-storybook -p ${PORT:-3001} -h 0.0.0.0",
     "deploy": "gh-pages -d build"
   },
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "babel": {
     "presets": [
       "./.babelrc.js"
     ]
   },
   "files": [
-    "src",
+    "dist",
     "style.css"
   ],
   "repository": {
